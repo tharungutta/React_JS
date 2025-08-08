@@ -31,3 +31,25 @@
 // }
 
 // export default WisherList
+
+
+//! context api
+//* Syntax : let value = useContext(ContextApi)
+
+import React,{useContext} from 'react'
+import { ProductApi } from './context/ProductContext'
+
+const WisherList = () => {
+
+    //!Step 3: context consumer
+    let data = useContext(ProductApi);
+    console.log(data);
+    
+  return (
+    <>
+        <h1>WisherList...{data}</h1>
+    </>
+  );
+}
+
+export default WisherList

@@ -20,3 +20,31 @@
 // }
 
 // export default MyProfile
+
+
+//! useContext()
+
+import React,{useContext} from 'react'
+import { ProfileApi } from '../context/ProfileContext'
+
+
+const MyProfile = () => {
+
+    //! Step 3: context consumer
+    //* Syntax : let value = useContext(ContextApi)
+
+    let data = useContext(ProfileApi)
+    console.log(data);
+    let {employee, salary, company, changeCompany} = data;
+    
+    return ( 
+    <>
+       <h1>Employee : {employee}</h1>
+       <h1>Salary : Rs.{salary}</h1>
+       <h1>Company : {company}</h1>
+       <button onClick={changeCompany}>CHANGE COMPANY</button>
+    </>
+  );
+}
+
+export default MyProfile

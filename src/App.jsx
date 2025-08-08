@@ -163,13 +163,15 @@
 
 
 import React from 'react'
-import StateCompo from "./hooks/StateCompo"
+// import StateCompo from "./hooks/StateCompo"
 // import SimpleCounter from "./task/SimpleCounter"
+// import ProductContext from './context/ProductContext'
+import ProfileContext from './context/ProfileContext'
 
 const App = () => {
   return (
     <>
-       <StateCompo/>
+       <ProfileContext/>
     </>
   )
 }

@@ -40,3 +40,24 @@
 // }
 
 // export default Cart
+
+//! context api
+//* Syntax : let value = useContext(ContextApi)
+
+import React, {useContext } from 'react'
+import { ProductApi } from './context/ProductContext'
+ 
+const Cart = () => {
+
+    //! step 3: context consumer
+    let data = useContext(ProductApi);
+    console.log(data);
+    
+  return ( 
+    <>
+       <h1>Cart...{data}</h1>
+    </>
+  ) ;
+}
+
+export default Cart
