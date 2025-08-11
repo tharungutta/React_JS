@@ -135,3 +135,21 @@
 //   )
 // }
 // export default Parent
+
+
+
+//! prop-types
+
+
+// import React from 'react'
+// import Child from './Child'
+
+// const Parent = () => {
+//   return (
+//     <>
+//      <Child name = "Kat" age = "30"/>
+//     </>
+//   )
+// }
+
+// export default Parent

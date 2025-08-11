@@ -133,3 +133,24 @@
 // export default Child
 
     
+
+// //! prop-types
+// import React from 'react'
+// import props from "prop-types"
+
+// const Child = (props) => {
+//     console.log(props);
+    
+//   return (
+//     <>
+//        <h1>{props.name}</h1>
+//        <h1>{props.age}</h1>
+//     </>
+//   );
+// }
+// export default Child
+
+// Child.propTypes = {
+//     name : props.string,
+//     age : props.number
+// }

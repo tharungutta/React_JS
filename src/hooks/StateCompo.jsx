@@ -1,5 +1,5 @@
 //! Hooks --> Functions--> FBC --> 16.8
-
+//! --> Hooks allows Functional component to have access to state and other react feautres which present in class based components.
 //! 3 type of hooks --> 1.useState  2. useEffect   3.useContext
 
 //* 1. useState() --> allow us to add state to FBC
