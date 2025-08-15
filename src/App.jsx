@@ -181,17 +181,32 @@
 
 //! Reference
 
+// import React from 'react'
+// // import Reference from './Reference'
+// // import VideoReference from './task/VideoReference';
+// import Uncontrolled from './Uncontrolled';
+
+// const App = () => {
+//   return (
+//     <>
+//       <Uncontrolled/>
+//     </>
+//   );
+// }
+
+// export default App
+
+
+//! lifeCycle
 import React from 'react'
-// import Reference from './Reference'
-// import VideoReference from './task/VideoReference';
-import Uncontrolled from './Uncontrolled';
+import LifeCycleParent from './lifecycle/LifeCycleParent';
 
 const App = () => {
   return (
     <>
-      <Uncontrolled/>
+      <LifeCycleParent/>
     </>
-  );
+  )
 }
 
 export default App
