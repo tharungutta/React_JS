@@ -198,13 +198,27 @@
 
 
 //! lifeCycle
+// import React from 'react'
+// import LifeCycleParent from './lifecycle/LifeCycleParent';
+
+// const App = () => {
+//   return (
+//     <>
+//       <LifeCycleParent/>
+//     </>
+//   )
+// }
+
+// export default App
+
+//! useEffect
 import React from 'react'
-import LifeCycleParent from './lifecycle/LifeCycleParent';
+import UseEffectParent from './useEffect/UseEffectParent'
 
 const App = () => {
   return (
     <>
-      <LifeCycleParent/>
+     <UseEffectParent/>
     </>
   )
 }
