@@ -212,13 +212,65 @@
 // export default App
 
 //! useEffect
+// import React from 'react'
+// import UseEffectParent from './useEffect/UseEffectParent'
+
+// const App = () => {
+//   return (
+//     <>
+//      <UseEffectParent/>
+//     </>
+//   )
+// }
+
+// export default App
+
+
+//! List & key-props rendering
+//* --> List --> collection of data --> array
+//* --> rendering -->loading/dislaying content on UI
+//* --> key props--> Special prop. Used to identify the elements
+//* --> uniquely from others
+// key = value , "value" passed must be unique.
+
+// import React, { Fragment } from 'react'
+
+// const App = () => {
+
+//   let students = ["jyothi","tharun","manoj","jyothi","tharun"];
+
+//   return (
+//     <>
+//       {students.map((val,ind)=>{
+//           // console.log("current val",val);
+//           // console.log("***************");
+//           return(
+//             <Fragment  key={ind}>
+//               <ul>
+//                 <li>{val}</li>
+//               </ul>
+//             </Fragment>
+//           );         
+//       })}
+//     </>
+//   )
+// }
+
+// export default App
+
+
+//! Extracting data from server by making AP
+//* 1) fetch()  2)axios
+//* API --> https://api.github.com/users --> JSON format
+
 import React from 'react'
-import UseEffectParent from './useEffect/UseEffectParent'
+// import FetchMethod from './Apicalls/FetchMethod'
+import AxiosLibraray from './Apicalls/AxiosLibraray'
 
 const App = () => {
   return (
     <>
-     <UseEffectParent/>
+       <AxiosLibraray/>
     </>
   )
 }
