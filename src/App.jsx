@@ -263,14 +263,34 @@
 //* 1) fetch()  2)axios
 //* API --> https://api.github.com/users --> JSON format
 
+// import React from 'react'
+// // import FetchMethod from './Apicalls/FetchMethod'
+// import AxiosLibraray from './Apicalls/AxiosLibraray'
+// // import Sender from './errorboundary/Sender'
+
+// const App = () => {
+//   return (
+//     <>
+//        {/* <Sender/> */}
+//        <AxiosLibraray/>
+//     </>
+//   )
+// }
+
+// export default App
+
+
+
+//! Portal
+
 import React from 'react'
-// import FetchMethod from './Apicalls/FetchMethod'
-import AxiosLibraray from './Apicalls/AxiosLibraray'
+import Portals from "./portal/Portals"
 
 const App = () => {
   return (
     <>
-       <AxiosLibraray/>
+    <h1>I am App</h1>
+      <Portals/>
     </>
   )
 }
