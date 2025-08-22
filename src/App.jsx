@@ -283,16 +283,65 @@
 
 //! Portal
 
+// import React from 'react'
+// import Portals from "./portal/Portals"
+
+// const App = () => {
+//   return (
+//     <>
+//     <h1>I am App</h1>
+//       <Portals/>
+//     </>
+//   )
+// }
+
+// export default App
+
+
+
+
+//! Routing --> Navigating btw the webpages base on "URL" without page reloading(SPA)
+//Library --> react-router-dom
+//Install --> npm i react-router-dom@latest
+
 import React from 'react'
-import Portals from "./portal/Portals"
+import { BrowserRouter, Routes ,Route} from 'react-router-dom'
+import Home from './Routing/Home';
+import Menu from './Routing/Menu';
+import Setting from './Routing/Setting';
+import PageNotFound from './Routing/PageNotFound';
+import "./global.css"
+import Layout from './Routing/Layout';
+
 
 const App = () => {
   return (
     <>
-    <h1>I am App</h1>
-      <Portals/>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout/>}>
+           <Route index element={<Home/>}/>
+           <Route path="/menu" element={<Menu/>}/>
+           <Route path="/setting" element={<Setting/>}/>
+           <Route path="*" element={<PageNotFound/>}/>
+        </Route>
+  
+      </Routes>
+    </BrowserRouter>
     </>
-  )
+  );
 }
 
 export default App
+
+
+
+//! Nested Routing --> process of writing one Route inside the another Route
+// why ? --> To follow the Route hierarchy
+//? Parent Route --> The Route which covers/wraps all the remaing Route
+//? Child Route/Children  --> All the Route covered by Parent Route
+//* PROBLEM: --> Only url of particular webpage is changing , but content is not changing 
+//* [ In all webpages getting the content of Parent Route compo]
+//? SOLUTION : Shared Routing / Shared Layout [mention <Outlet/> in Parent Route compo] 
+
+//! NOTE --> When we display "seperate content" for "landing page " then only immediate child route with path="/"(index) is needed.
